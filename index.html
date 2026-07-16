@@ -442,8 +442,8 @@
     </p>
 
     <div class="hero-cta">
-      <a href="mailto:leandrolopezalbini@gmail.com" class="btn-primary" data-lang-inline="es">Solicitar demo</a>
-      <a href="mailto:leandrolopezalbini@gmail.com" class="btn-primary" data-lang-inline="en">Request a demo</a>
+      <a href="mailto:leandrolopezalbini@gmail.com?subject=Consulta%20EstacionAR%20-%20Demo&body=Hola%20Leandro%2C%20me%20interesa%20conocer%20el%20sistema%20EstacionAR." class="btn-primary" data-lang-inline="es">Solicitar demo</a>
+      <a href="mailto:leandrolopezalbini@gmail.com?subject=EstacionAR%20Demo%20Request&body=Hi%20Leandro%2C%20I%27m%20interested%20in%20learning%20more%20about%20EstacionAR." class="btn-primary" data-lang-inline="en">Request a demo</a>
     </div>
 
     <div class="hero-stats">
@@ -495,21 +495,21 @@
         <div class="card-icon">👮</div>
         <h3 data-lang="es">Inspector digital</h3>
         <h3 data-lang="en">Digital inspector</h3>
-        <p data-lang="es">Verificación de patente en la via publica con resultado instantáneo. Genera infracciones con foto + geoposicion y PDF del turno.</p>
-        <p data-lang="en">License plate lookup in the field with instant results. Issues infractions with geotagged photos and shift PDF reports.</p>
+        <p data-lang="es">Verificación de patente en la vía pública con resultado instantáneo. Genera infracciones con foto + geoposicion. Al finalizar el turno, se genera PDF reporte.</p>
+        <p data-lang="en">License plate lookup in the street with instant results. Issues infractions with geotagged photos and shift PDF reports.</p>
       </div>
       <div class="card">
         <div class="card-icon">⚖️</div>
         <h3 data-lang="es">Tolerancia configurable</h3>
         <h3 data-lang="en">Configurable tolerance</h3>
-        <p data-lang="es">El "Admin" define un período de gracia. Si el conductor estaciona dentro de ese plazo, la infracción se anula automáticamente. Con margen de 60 segundos para evitar cobros injustos.</p>
-        <p data-lang="en">The "Admin" defines a grace period. If the driver parks within that window, the infraction is automatically voided. A 60-second buffer prevents unfair charges.</p>
+        <p data-lang="es">El "Admin" define un período de gracia. Si el conductor estaciona dentro de ese plazo, la infracción se anula automáticamente. Con margen de "X" segundos para evitar cobros injustos.</p>
+        <p data-lang="en">The "Admin" defines a grace period. If the driver parks within that window, the infraction is automatically voided. A "X"-second buffer prevents unfair charges.</p>
       </div>
       <div class="card">
         <div class="card-icon">🏪</div>
         <h3 data-lang="es">Red de vendedores</h3>
         <h3 data-lang="en">Vendor network</h3>
-        <p data-lang="es">Kioscos y comercios cobran estacionamientos, abonos mensuales e infracciones en efectivo. Cada cobro genera ticket y se registra en caja.</p>
+        <p data-lang="es">Kioscos y comercios pueden cobrar estacionamientos, abonos mensuales e infracciones en efectivo. Cada cobro genera ticket y se registra en caja.</p>
         <p data-lang="en">Kiosks and shops collect parking fees, monthly passes, and infractions in cash. Each payment generates a ticket and caja entry.</p>
       </div>
       <div class="card">
@@ -530,8 +530,15 @@
         <div class="card-icon">💳</div>
         <h3 data-lang="es">MercadoPago integrado</h3>
         <h3 data-lang="en">MercadoPago integrated</h3>
-        <p data-lang="es">El conductor carga saldo online. El sistema recibe el webhook, verifica el pago y acredita automáticamente. Google OAuth para login sin contraseña.</p>
-        <p data-lang="en">Drivers top up online. The system receives the webhook, verifies payment, and credits automatically. Google OAuth for passwordless login.</p>
+        <p data-lang="es">El conductor carga saldo online. El sistema recibe el webhook, verifica el pago y acredita automáticamente en el saldo del usuario.</p>
+        <p data-lang="en">Drivers top up online. The system receives the webhook, verifies payment, and credits the user's balance automatically.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔑</div>
+        <h3 data-lang="es">Login con Google</h3>
+        <h3 data-lang="en">Google sign-in</h3>
+        <p data-lang="es">El conductor puede registrarse e iniciar sesión con su cuenta de Google, sin crear una contraseña. OAuth 2.0 integrado con django-allauth — seguro, estándar y sin fricciones.</p>
+        <p data-lang="en">Drivers can sign up and log in with their Google account — no password needed. OAuth 2.0 via django-allauth: secure, standard, and frictionless.</p>
       </div>
       <div class="card">
         <div class="card-icon">📊</div>
@@ -557,8 +564,8 @@
 <section id="roles" class="roles-section">
   <div class="container">
     <div class="section-label">Roles</div>
-    <h2 data-lang="es">Cinco roles, un sistema</h2>
-    <h2 data-lang="en">Five roles, one system</h2>
+    <h2 data-lang="es">Cinco roles, un sistema.</h2>
+    <h2 data-lang="en">Five roles, one system.</h2>
     <p class="section-intro" data-lang="es">Cada usuario ve solo lo que necesita. El control de acceso está aplicado en cada vista.</p>
     <p class="section-intro" data-lang="en">Each user sees only what they need. Access control is enforced on every view.</p>
 
@@ -585,9 +592,9 @@
         <h3 data-lang="es">Inspector</h3>
         <h3 data-lang="en">Inspector</h3>
         <ul>
-          <li data-lang="es">Verificar patente en campo</li>
-          <li data-lang="en">Look up plates in the field</li>
-          <li data-lang="es">Registrar infracciones con foto</li>
+          <li data-lang="es">Verificar patente en calle</li>
+          <li data-lang="en">Look up plates in the street</li>
+          <li data-lang="es">Registrar infracciones con foto + coordenadas</li>
           <li data-lang="en">Issue infractions with photos</li>
           <li data-lang="es">PDF de infracciones del turno</li>
           <li data-lang="en">Shift PDF report</li>
@@ -600,11 +607,11 @@
         <h3 data-lang="es">Vendedor</h3>
         <h3 data-lang="en">Vendor</h3>
         <ul>
-          <li data-lang="es">Cobrar estacionamiento en efectivo</li>
-          <li data-lang="en">Collect cash parking fees</li>
+          <li data-lang="es">Cobrar estacionamiento</li>
+          <li data-lang="en">Collect cash parking</li>
           <li data-lang="es">Cobrar infracciones por patente</li>
           <li data-lang="en">Collect infractions by plate</li>
-          <li data-lang="es">Vender abonos mensuales</li>
+          <li data-lang="es">Vende abonos mensuales</li>
           <li data-lang="en">Sell monthly passes</li>
           <li data-lang="es">Cierre de caja y rendición</li>
           <li data-lang="en">Cash close and settlement</li>
@@ -669,8 +676,8 @@
         <div class="step-content">
           <h4 data-lang="es">Inspector verifica la patente</h4>
           <h4 data-lang="en">Inspector looks up the plate</h4>
-          <p data-lang="es">Resultado instantáneo: pagado ✅, impago 🚨, exento ✅, abono mensual vigente ✅. Si corresponde, labra infracción con foto y subcuadra.</p>
-          <p data-lang="en">Instant result: paid ✅, unpaid 🚨, exempt ✅, active monthly pass ✅. If needed, issues an infraction with photo and block.</p>
+          <p data-lang="es">Resultado instantáneo: Pagado ✅, Impago 🚨, Exento ✅. Si corresponde, labra infracción con foto, subcuadra y coordenadas.</p>
+          <p data-lang="en">Instant result: paid ✅, unpaid 🚨, exempt ✅. If needed, issues an infraction with photo and block.</p>
         </div>
       </div>
       <div class="flow-step">
